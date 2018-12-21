@@ -14,7 +14,6 @@ I realized the default firmware that came with my Wanhao Duplicator i3 was, fran
 [https://www.reddit.com/r/3Dprinting/comments/8o3wg8/installing_marlin_on_maker_select_v2/](https://www.reddit.com/r/3Dprinting/comments/8o3wg8/installing_marlin_on_maker_select_v2/)
 [https://www.thingiverse.com/thing:2450111](https://www.thingiverse.com/thing:2450111)
 
-- [Sincerely, Matthew Piercey](https://matthewpiercey.ml)
 
 ## Some Features
 
@@ -36,4 +35,6 @@ I realized the default firmware that came with my Wanhao Duplicator i3 was, fran
 
 Marlin is published under the GPL License, and a copy of that license is included in the source code. It's worth noting that the license explicitly states that any software licensed under it is offered with "NO WARRANTY... OF ANY KIND, EITHER EXPRESSED OR IMPLIED." I'm offering this firmware open-source in the hopes that it might prove helpful to someone else, but I'm not responsible if anything goes wrong with your printer or anything else because of it; it's AS-IS.
 
+At any rate, I hope this firmware solves some problems for you; think of it like a 2018 update to the Wanhao i3.
 
+- [Sincerely, Matthew Piercey](https://matthewpiercey.ml)

@@ -18,13 +18,13 @@ I realized the default firmware that came with my Wanhao Duplicator i3 was, fran
 
 ## Some Features
 
-..* Custom "Chippy" Bootscreen by [Bot-In-a-Box](https://botinabox.ca)
-..* Built-in Thermal Runway Protection
-..* Change Settings and Save/Load them from EEPROM
-..* Printing over SD Micro/USB Mini Support
-..* Bed-Leveling Wizard
-..* Change Temperature/Position/Extrusion On-the-Fly
-..* **TO-DO:** TEMPERATURE SETTINGS ARE A BIT OFF (NOZZLE SHOWS 35C WHEN IT'S 15 INSIDE)
++ Custom "Chippy" Bootscreen by [Bot-In-a-Box](https://botinabox.ca)
++ Built-in Thermal Runway Protection
++ Change Settings and Save/Load them from EEPROM
++ Printing over SD Micro/USB Mini Support
++ Bed-Leveling Wizard
++ Change Temperature/Position/Extrusion On-the-Fly
++ **TO-DO:** TEMPERATURE SETTINGS ARE A BIT OFF (NOZZLE SHOWS 35C WHEN IT'S 15 INSIDE)
 	
 ## How to Install
 

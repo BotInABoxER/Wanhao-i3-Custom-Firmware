@@ -28,9 +28,9 @@ I realized the default firmware that came with my Wanhao Duplicator i3 was, fran
 	
 ## How to Install
 
-	1. Flash the Optiboot Bootloader on your Melzi board after taking it out of the box (I used my Raspberry Pi to do it):[https://www.fission3d.com/guides/flash-bootloader-and-install-firmware-with-raspberry-pi](https://www.fission3d.com/guides/flash-bootloader-and-install-firmware-with-raspberry-pi)
-	2. Auto Build the Firmware with Platform.io in Atom [http://marlinfw.org/docs/basics/install_platformio.html](http://marlinfw.org/docs/basics/install_platformio.html)
-	3. Auto Upload the Firmware with Platform.io in Atom (After connecting the Melzi to your computer via USB Mini)
+1. Flash the Optiboot Bootloader on your Melzi board after taking it out of the box (I used my Raspberry Pi to do it): [https://www.fission3d.com/guides/flash-bootloader-and-install-firmware-with-raspberry-pi](https://www.fission3d.com/guides/flash-bootloader-and-install-firmware-with-raspberry-pi)
+2. Auto Build the Firmware with Platform.io in Atom [http://marlinfw.org/docs/basics/install_platformio.html](http://marlinfw.org/docs/basics/install_platformio.html)
+3. Auto Upload the Firmware with Platform.io in Atom (After connecting the Melzi to your computer via USB Mini)
 
 ## License
 

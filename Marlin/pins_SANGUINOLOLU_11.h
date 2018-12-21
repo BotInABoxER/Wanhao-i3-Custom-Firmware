@@ -160,9 +160,9 @@
     #if ENABLED(U8GLIB_ST7920) // SPI GLCD 12864 ST7920 ( like [www.digole.com] ) For Melzi V2.0
 
       #if ENABLED(IS_MELZI)
-        #define LCD_PINS_RS     30   // CS chip select /SS chip slave select
-        #define LCD_PINS_ENABLE 29   // SID (MOSI)
-        #define LCD_PINS_D4     17   // SCK (CLK) clock
+        #define LCD_PINS_RS     17   // CS chip select /SS chip slave select
+        #define LCD_PINS_ENABLE 16   // SID (MOSI)
+        #define LCD_PINS_D4     11   // SCK (CLK) clock
         // Pin 27 is taken by LED_PIN, but Melzi LED does nothing with
         // Marlin so this can be used for BEEPER_PIN. You can use this pin
         // with M42 instead of BEEPER_PIN.
@@ -179,7 +179,7 @@
     #else // DOGM SPI LCD Support
 
       #define DOGLCD_A0         30
-      #define LCD_CONTRAST       1
+      #define LCD_CONTRAST      255
 
       #if ENABLED(MAKRPANEL)
 

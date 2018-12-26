@@ -1,7 +1,7 @@
 # Custom Firmware for the Wanhao Duplicator i3 v2.1, by Bot-In-a-Box
 ## Based on Marlin Firmware 1.1.9
 
-A big thank-you is in order to everyone who's contributed to the Marlin Firmware over the years; because of their support Marlin has become a state-of-the-art universal firmware for 3D Printers everywhere. 
+A big thank-you is in order to everyone who's contributed to the Marlin Firmware over the years; because of their support and continued development Marlin has become a state-of-the-art universal firmware for 3D Printers everywhere. 
 
 The 1.1.x branch is home to all tagged releases of Marlin 1.1 (final version 1.1.9 – August 2018).
 For more information about the Marlin firmware head to the [Marlin Homepage - marlinfw.org](http://marlinfw.org/).
@@ -22,8 +22,12 @@ I realized the default firmware that came with my Wanhao Duplicator i3 was, fran
 + Change Settings and Save/Load them from EEPROM
 + Printing over SD Micro/USB Mini Support
 + Bed-Leveling Wizard
++ Custom Feed Rate Icon on Status Screen
+* Custom Thermistor Tables from [https://www.thingiverse.com/thing:2450111](https://www.thingiverse.com/thing:2450111) by [Nitrogen777](https://www.thingiverse.com/Nitrogen777/about)
 + Change Temperature/Position/Extrusion On-the-Fly
-+ **TO-DO:** TEMPERATURE SETTINGS ARE A BIT OFF (NOZZLE SHOWS 35C WHEN IT'S 15 INSIDE)
++ Added Custom Features Menu for Preheating/Moving Extruder out of the Way after a Print
++ Print Time Elapsed and Progress Bar 
++ Minor Stability/Connection/Performance Improvements
 	
 ## How to Install
 

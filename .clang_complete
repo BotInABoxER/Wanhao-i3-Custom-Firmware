@@ -1,5 +1,3 @@
--IC:\Users\Matthew Piercey\dev\Wanhao i3 Marlin Firmware\include
--IC:\Users\Matthew Piercey\dev\Wanhao i3 Marlin Firmware\Marlin
 -IC:\Users\Matthew Piercey\.platformio\packages\framework-arduinoavr\cores\arduino
 -IC:\Users\Matthew Piercey\.platformio\packages\framework-arduinoavr\variants\mega
 -IC:\Users\Matthew Piercey\dev\Wanhao i3 Marlin Firmware\.piolibdeps\30aa480
@@ -40,7 +38,9 @@
 -IC:\Users\Matthew Piercey\.platformio\packages\toolchain-atmelavr\lib\gcc\avr\4.9.2\include
 -IC:\Users\Matthew Piercey\.platformio\packages\toolchain-atmelavr\lib\gcc\avr\4.9.2\include-fixed
 -IC:\Users\Matthew Piercey\.platformio\packages\tool-unity
--DPLATFORMIO=30601
+-IC:\Users\Matthew Piercey\dev\Wanhao i3 Marlin Firmware\include
+-IC:\Users\Matthew Piercey\dev\Wanhao i3 Marlin Firmware\Marlin
+-DPLATFORMIO=30604
 -DARDUINO_AVR_MEGA2560
 -DF_CPU=16000000L
 -DARDUINO_ARCH_AVR

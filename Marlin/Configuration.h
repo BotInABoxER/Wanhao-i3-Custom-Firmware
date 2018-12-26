@@ -83,7 +83,7 @@
    // build by the user have been successfully uploaded into firmware.
 #define STRING_CONFIG_H_AUTHOR "Matthew Piercey, Bot-In-a-Box Educational Robotics" // Who made the changes.
 #define SHOW_BOOTSCREEN
-#define STRING_SPLASH_LINE1 "1.0.0" // will be shown during bootup in line 1
+#define STRING_SPLASH_LINE1 "BB v1.1.1" // will be shown during bootup in line 1
 #define STRING_SPLASH_LINE2 "https://botinabox.ca"         // will be shown during bootup in line 2
 
 /**
@@ -136,7 +136,7 @@
 
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
-#define CUSTOM_MACHINE_NAME "Wanhao i3 v2.1"
+#define CUSTOM_MACHINE_NAME "Wanhao i3"
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
@@ -292,6 +292,7 @@
  *    66 : 4.7M High Temperature thermistor from Dyze Design
  *    70 : the 100K thermistor found in the bq Hephestos 2
  *    75 : 100k Generic Silicon Heat Pad with NTC 100K MGB18-104F39050L32 thermistor
+ *    99 : 100K Generic - 3950 1% with 10K pullup
  *
  *       1k ohm pullup tables - This is atypical, and requires changing out the 4.7k pullup for 1k.
  *                              (but gives greater accuracy and more stable PID)
@@ -310,12 +311,12 @@
  *
  * :{ '0': "Not used", '1':"100k / 4.7k - EPCOS", '2':"200k / 4.7k - ATC Semitec 204GT-2", '3':"Mendel-parts / 4.7k", '4':"10k !! do not use for a hotend. Bad resolution at high temp. !!", '5':"100K / 4.7k - ATC Semitec 104GT-2 (Used in ParCan & J-Head)", '501':"100K Zonestar (Tronxy X3A)", '6':"100k / 4.7k EPCOS - Not as accurate as Table 1", '7':"100k / 4.7k Honeywell 135-104LAG-J01", '8':"100k / 4.7k 0603 SMD Vishay NTCS0603E3104FXT", '9':"100k / 4.7k GE Sensing AL03006-58.2K-97-G1", '10':"100k / 4.7k RS 198-961", '11':"100k / 4.7k beta 3950 1%", '12':"100k / 4.7k 0603 SMD Vishay NTCS0603E3104FXT (calibrated for Makibox hot bed)", '13':"100k Hisens 3950  1% up to 300°C for hotend 'Simple ONE ' & hotend 'All In ONE'", '20':"PT100 (Ultimainboard V2.x)", '51':"100k / 1k - EPCOS", '52':"200k / 1k - ATC Semitec 204GT-2", '55':"100k / 1k - ATC Semitec 104GT-2 (Used in ParCan & J-Head)", '60':"100k Maker's Tool Works Kapton Bed Thermistor beta=3950", '66':"Dyze Design 4.7M High Temperature thermistor", '70':"the 100K thermistor found in the bq Hephestos 2", '71':"100k / 4.7k Honeywell 135-104LAF-J01", '147':"Pt100 / 4.7k", '1047':"Pt1000 / 4.7k", '110':"Pt100 / 1k (non-standard)", '1010':"Pt1000 / 1k (non standard)", '-4':"Thermocouple + AD8495", '-3':"Thermocouple + MAX31855 (only for sensor 0)", '-2':"Thermocouple + MAX6675 (only for sensor 0)", '-1':"Thermocouple + AD595",'998':"Dummy 1", '999':"Dummy 2" }
  */
-#define TEMP_SENSOR_0 13
+#define TEMP_SENSOR_0 99
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
 #define TEMP_SENSOR_4 0
-#define TEMP_SENSOR_BED 5
+#define TEMP_SENSOR_BED 99
 #define TEMP_SENSOR_CHAMBER 0
 
  // Dummy thermistor constant temperature readings, for use with 998 and 999
@@ -328,13 +329,13 @@
 #define MAX_REDUNDANT_TEMP_SENSOR_DIFF 10
 
 // Extruder temperature must be close to target for this long before M109 returns success
-#define TEMP_RESIDENCY_TIME 8   // (seconds)
-#define TEMP_HYSTERESIS 2       // (degC) range of +/- temperatures considered "close" to the target one
+#define TEMP_RESIDENCY_TIME 10   // (seconds)
+#define TEMP_HYSTERESIS 3       // (degC) range of +/- temperatures considered "close" to the target one
 #define TEMP_WINDOW     1       // (degC) Window around target to start the residency timer x degC early.
 
 // Bed temperature must be close to target for this long before M190 returns success
-#define TEMP_BED_RESIDENCY_TIME 8   // (seconds)
-#define TEMP_BED_HYSTERESIS 2       // (degC) range of +/- temperatures considered "close" to the target one
+#define TEMP_BED_RESIDENCY_TIME 10   // (seconds)
+#define TEMP_BED_HYSTERESIS 3       // (degC) range of +/- temperatures considered "close" to the target one
 #define TEMP_BED_WINDOW     1       // (degC) Window around target to start the residency timer x degC early.
 
 // The minimal temperature defines the temperature below which the heater will not be enabled It is used
@@ -380,9 +381,9 @@
 // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
 // Wanhao Duplicator i3 w/ MK10 Hotend
-#define  DEFAULT_Kp 7.00
+#define  DEFAULT_Kp 29
 #define  DEFAULT_Ki 2.00
-#define  DEFAULT_Kd 40.00
+#define  DEFAULT_Kd 97
 
 // MakerGear
 //#define DEFAULT_Kp 7.0
@@ -607,14 +608,14 @@
 	 * Override with M92
 	 *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
 	 */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 104 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 100 }
 
 	 /**
 	  * Default Max Feed Rate (mm/s)
 	  * Override with M203
 	  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
 	  */
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 20, 50 }
+#define DEFAULT_MAX_FEEDRATE          { 300, 300, 5, 25 }
 
 	  /**
 	   * Default Max Acceleration (change/s) change = mm/s
@@ -622,7 +623,7 @@
 	   * Override with M201
 	   *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
 	   */
-#define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 10000 }
+#define DEFAULT_MAX_ACCELERATION      { 700, 700, 100, 10000 }
 
 	   /**
 		* Default Acceleration (change/s) change = mm/s
@@ -632,9 +633,9 @@
 		*   M204 R    Retract Acceleration
 		*   M204 T    Travel Acceleration
 		*/
-#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_ACCELERATION          700    // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   3000    // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_TRAVEL_ACCELERATION   700    // X, Y, Z acceleration for travel (non printing) moves
 
 		/**
 		 * Default Jerk (mm/s)
@@ -644,10 +645,10 @@
 		 * When changing speed and direction, if the difference is less than the
 		 * value set here, it may happen instantaneously.
 		 */
-#define DEFAULT_XJERK                 10.0
-#define DEFAULT_YJERK                 10.0
-#define DEFAULT_ZJERK                  0.3
-#define DEFAULT_EJERK                  5.0
+#define DEFAULT_XJERK                 8.0
+#define DEFAULT_YJERK                 8.0
+#define DEFAULT_ZJERK                 0.4
+#define DEFAULT_EJERK                 5.0
 
 		 /**
 		  * S-Curve Acceleration
@@ -708,7 +709,7 @@
 			  * Use G29 repeatedly, adjusting the Z height at each point with movement commands
 			  * or (with LCD_BED_LEVELING) the LCD controller.
 			  */
-			  //#define PROBE_MANUALLY
+			  #define PROBE_MANUALLY
 			  //#define MANUAL_PROBE_START_Z 0.2
 
 			  /**
@@ -783,7 +784,7 @@
 #define MIN_PROBE_EDGE 10
 
 // X and Y axis travel speed (mm/m) between probes
-#define XY_PROBE_SPEED 8000
+#define XY_PROBE_SPEED 3000
 
 // Feedrate (mm/m) for the first approach when double-probing (MULTIPLE_PROBING == 2)
 #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
@@ -976,7 +977,7 @@
  //#define AUTO_BED_LEVELING_LINEAR
  //#define AUTO_BED_LEVELING_BILINEAR
  //#define AUTO_BED_LEVELING_UBL
- //#define MESH_BED_LEVELING
+ #define MESH_BED_LEVELING
 
  /**
   * Normally G28 leaves leveling disabled on completion. Enable
@@ -1098,7 +1099,7 @@
  * Add a bed leveling sub-menu for ABL or MBL.
  * Include a guided procedure if manual probing is enabled.
  */
- //#define LCD_BED_LEVELING
+ #define LCD_BED_LEVELING
 
 #if ENABLED(LCD_BED_LEVELING)
 #define MBL_Z_STEP 0.025    // Step size while manually probing Z axis.
@@ -1249,7 +1250,7 @@
 //
 // M149 Set temperature units support
 //
-//#define TEMPERATURE_UNITS_SUPPORT
+// #define TEMPERATURE_UNITS_SUPPORT
 
 // @section temperature
 
@@ -1373,7 +1374,7 @@
   *
   * View the current statistics with M78.
   */
-  //#define PRINTCOUNTER
+  #define PRINTCOUNTER
 
   //=============================================================================
   //============================= LCD and SD support ============================

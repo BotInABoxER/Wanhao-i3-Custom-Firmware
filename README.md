@@ -1,7 +1,13 @@
 # Custom Firmware for the Wanhao Duplicator i3 v2.1, by Bot-In-a-Box
+
+![The custom bootscreen based on Chippy from Bot-In-a-Box][logo]
+[logo]: https://botinabox.ca/wp-content/uploads/2018/12/chippy_bootscreen.jpg "Custom Chippy Bootscreen"
+
+
+
 ## Based on Marlin Firmware 1.1.9
 
-A big thank-you is in order to everyone who's contributed to the Marlin Firmware over the years; because of their support and continued development Marlin has become a state-of-the-art universal firmware for 3D Printers everywhere. 
+A big thank-you is in order to everyone who's contributed to the Marlin Firmware over the years; because of their support and continued development Marlin has become a state-of-the-art, highly-extensible universal firmware for 3D Printers everywhere. 
 
 The 1.1.x branch is home to all tagged releases of Marlin 1.1 (final version 1.1.9 – August 2018).
 For more information about the Marlin firmware head to the [Marlin Homepage - marlinfw.org](http://marlinfw.org/).
@@ -33,7 +39,18 @@ I realized the default firmware that came with my Wanhao Duplicator i3 was, fran
 
 1. Flash the Optiboot Bootloader on your Melzi board after taking it out of the box (I used my Raspberry Pi to do it): [https://www.fission3d.com/guides/flash-bootloader-and-install-firmware-with-raspberry-pi](https://www.fission3d.com/guides/flash-bootloader-and-install-firmware-with-raspberry-pi)
 2. Auto Build the Firmware with Platform.io in Atom [http://marlinfw.org/docs/basics/install_platformio.html](http://marlinfw.org/docs/basics/install_platformio.html)
-3. Auto Upload the Firmware with Platform.io in Atom (After connecting the Melzi to your computer via USB Mini)
+3. Auto Upload the Firmware with Platform.io in Atom (After connecting the Melzi to your computer via USB Mini and ensuring the PWR jumper on the Melzi is set to the USB Setting)
+
+## Scrapbook
+
+![The Marlin Bootscreen](https://botinabox.ca/wp-content/uploads/2018/12/marlin_bootscreen.jpg "The Marlin Bootscreen")
+![The Status Screen](https://botinabox.ca/wp-content/uploads/2018/12/status_screen.jpg "The Status Screen")
+![Custom Controls Menu](https://botinabox.ca/wp-content/uploads/2018/12/custom_controlls.jpg "Custom Controls Menu")
+![Main Menu](https://botinabox.ca/wp-content/uploads/2018/12/main_menu.jpg "Main Menu")
+![A simple trick to change to VREG or USB power is to use Dupont Jumper cables and stick them out the 110V/220V hole](https://botinabox.ca/wp-content/uploads/2018/12/simple_trick.jpg "A simple trick to change to VREG or USB power")
+![My 3D Printer](https://botinabox.ca/wp-content/uploads/2018/12/bbwanhao.jpg "My 3D Printer")
+
+
 
 ## License
 

@@ -1,9 +1,6 @@
 # Custom Firmware for the Wanhao Duplicator i3 v2.1, by Bot-In-a-Box
 
-![The custom bootscreen based on Chippy from Bot-In-a-Box][logo]
-[logo]: https://botinabox.ca/wp-content/uploads/2018/12/chippy_bootscreen.jpg "Custom Chippy Bootscreen"
-
-
+![The custom bootscreen featuring Chippy from Bot-In-a-Box](https://botinabox.ca/wp-content/uploads/2018/12/chippy_bootscreen.jpg  "The custom bootscreen featuring Chippy from Bot-In-a-Box")
 
 ## Based on Marlin Firmware 1.1.9
 

@@ -83,7 +83,7 @@
    // build by the user have been successfully uploaded into firmware.
 #define STRING_CONFIG_H_AUTHOR "Matthew Piercey, Bot-In-a-Box Educational Robotics" // Who made the changes.
 #define SHOW_BOOTSCREEN
-#define STRING_SPLASH_LINE1 "BB v1.1.1" // will be shown during bootup in line 1
+#define STRING_SPLASH_LINE1 "BB v1.1.2" // will be shown during bootup in line 1
 #define STRING_SPLASH_LINE2 "https://botinabox.ca"         // will be shown during bootup in line 2
 
 /**
@@ -123,7 +123,7 @@
   *
   * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
   */
-#define BAUDRATE 9600
+#define BAUDRATE 250000
 
   // Enable the Bluetooth serial interface on AT90USB devices
   //#define BLUETOOTH

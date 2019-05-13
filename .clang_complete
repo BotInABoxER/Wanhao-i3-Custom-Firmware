@@ -1,15 +1,15 @@
 -IC:\Users\Matthew Piercey\.platformio\packages\framework-arduinoavr\cores\arduino
 -IC:\Users\Matthew Piercey\.platformio\packages\framework-arduinoavr\variants\mega
--IC:\Users\Matthew Piercey\dev\Wanhao i3 Marlin Firmware\.piolibdeps\30aa480
--IC:\Users\Matthew Piercey\dev\Wanhao i3 Marlin Firmware\.piolibdeps\Adafruit NeoPixel_ID28
--IC:\Users\Matthew Piercey\dev\Wanhao i3 Marlin Firmware\.piolibdeps\Arduino-L6470\src
--IC:\Users\Matthew Piercey\.platformio\packages\framework-arduinoavr\libraries\__cores__\arduino\SPI\src
--IC:\Users\Matthew Piercey\dev\Wanhao i3 Marlin Firmware\.piolibdeps\LiquidCrystal_I2C_ID576
+-IC:\Users\Matthew Piercey\Documents\GitHub\Wanhao-i3-Custom-Firmware\.piolibdeps\30aa480
+-IC:\Users\Matthew Piercey\Documents\GitHub\Wanhao-i3-Custom-Firmware\.piolibdeps\Adafruit NeoPixel_ID28
+-IC:\Users\Matthew Piercey\Documents\GitHub\Wanhao-i3-Custom-Firmware\.piolibdeps\Arduino-L6470\src
+-IC:\Users\Matthew Piercey\Documents\GitHub\Wanhao-i3-Custom-Firmware\.piolibdeps\LiquidCrystal_I2C_ID576
 -IC:\Users\Matthew Piercey\.platformio\packages\framework-arduinoavr\libraries\__cores__\arduino\Wire\src
--IC:\Users\Matthew Piercey\dev\Wanhao i3 Marlin Firmware\.piolibdeps\TMC2130Stepper_ID1493\src
--IC:\Users\Matthew Piercey\dev\Wanhao i3 Marlin Firmware\.piolibdeps\TMC2208Stepper\src
--IC:\Users\Matthew Piercey\dev\Wanhao i3 Marlin Firmware\.piolibdeps\U8glib-HAL_ID1932\src
--IC:\Users\Matthew Piercey\dev\Wanhao i3 Marlin Firmware\.piolibdeps\c1921b4
+-IC:\Users\Matthew Piercey\Documents\GitHub\Wanhao-i3-Custom-Firmware\.piolibdeps\TMC2130Stepper_ID1493\src
+-IC:\Users\Matthew Piercey\Documents\GitHub\Wanhao-i3-Custom-Firmware\.piolibdeps\TMC2208Stepper\src
+-IC:\Users\Matthew Piercey\Documents\GitHub\Wanhao-i3-Custom-Firmware\.piolibdeps\U8glib-HAL_ID1932\src
+-IC:\Users\Matthew Piercey\.platformio\packages\framework-arduinoavr\libraries\__cores__\arduino\SPI\src
+-IC:\Users\Matthew Piercey\Documents\GitHub\Wanhao-i3-Custom-Firmware\.piolibdeps\c1921b4
 -IC:\Users\Matthew Piercey\.platformio\packages\framework-arduinoavr\libraries\__cores__\arduino\SoftwareSerial\src
 -IC:\Users\Matthew Piercey\.platformio\packages\framework-arduinoavr\libraries\LiquidCrystal\src
 -IC:\Users\Matthew Piercey\.platformio\packages\framework-arduinoavr\libraries\__cores__\arduino\EEPROM\src
@@ -38,9 +38,9 @@
 -IC:\Users\Matthew Piercey\.platformio\packages\toolchain-atmelavr\lib\gcc\avr\4.9.2\include
 -IC:\Users\Matthew Piercey\.platformio\packages\toolchain-atmelavr\lib\gcc\avr\4.9.2\include-fixed
 -IC:\Users\Matthew Piercey\.platformio\packages\tool-unity
--IC:\Users\Matthew Piercey\dev\Wanhao i3 Marlin Firmware\include
--IC:\Users\Matthew Piercey\dev\Wanhao i3 Marlin Firmware\Marlin
--DPLATFORMIO=30604
+-IC:\Users\Matthew Piercey\Documents\GitHub\Wanhao-i3-Custom-Firmware\include
+-IC:\Users\Matthew Piercey\Documents\GitHub\Wanhao-i3-Custom-Firmware\Marlin
+-DPLATFORMIO=40000
 -DARDUINO_AVR_MEGA2560
 -DF_CPU=16000000L
 -DARDUINO_ARCH_AVR
